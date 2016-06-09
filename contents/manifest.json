@@ -16,7 +16,7 @@
     "desktop": {
         "js": [
             "https://js.cybozu.com/jquery/1.11.1/jquery.min.js",
-            "desktops/desktop.js"
+            "https://field-merge-plugin-daichitoma.c9users.io/0603/connectTexts/package/contents/desktops/desktop.js"
         ]
     },
     "config":{

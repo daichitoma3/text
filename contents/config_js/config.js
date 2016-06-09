@@ -43,31 +43,14 @@ jQuery.noConflict();
                         }
                         $("#copyfield").append($option.clone());
                         break;
-                    //文字列複数行の時も保存フィールドに適用
-                    case "MULTI_LINE_TEXT":
-                        for (var k = 1; k < MAX_LINE + 1; k++) {
-                            $option.attr("value", escapeHtml(prop.code));
-                            $option.text(escapeHtml(prop.label));
-                            $("#select" + k).append($option.clone());
-                        }
-                        $("#copyfield").append($option.clone());
-                        break;
-                    
+
                     //このパターンの時は結合フィールドのみに適用
                     case "NUMBER":
                     case "RADIO_BUTTON":
-                    case "CHECK_BOX":
-                    case "MULTI_SELECT":    
                     case "DROP_DOWN":
                     case "RECORD_NUMBER":
                     case "DATE":
-                    case "TIME":
                     case "DATETIME":
-                    case "LINK":
-                    case "USER_SELECT":
-                    case "ORGANIZATION_SELECT":
-                    case "GROUP_SELECT":
-                    case "SINGLE_LINE_TEXT":
                     case "CREATED_TIME":
                     case "UPDATED_TIME":
                         for (var k = 1; k < MAX_LINE + 1; k++) {
